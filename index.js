@@ -31,7 +31,7 @@ userClient.on('message', message => { // do this when a new message arrives
                 botClient.channels.get('909296759967195188').send({ files: [attachment.url] }) // send that attachment to a different channel
             })
             message.embeds.forEach(embed => { // for each embed
-                botClient.channels.get('899674138304716849').send(msgEmbedToRich(embed))//server de prueba kj // send that embed to a different channel
+                botClient.channels.get('909296759967195188').send(msgEmbedToRich(embed))//server de prueba kj // send that embed to a different channel
             })
         }
     }
